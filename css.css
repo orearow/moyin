@@ -6,10 +6,14 @@ body{
 .jumbotron {
 	background: black;
 	color: hotpink;
-font-family: 'Marck Script', cursive;
-
+	font-family: 'Marck Script', cursive;
 }
-.thumbnail{
+
+.grid-banner {
+	color: hotpink;
+	font-family: 'Marck Script', cursive;
+}
+.img-thumbnail{
 	border-color: hotpink;
 }
 
@@ -25,3 +29,63 @@ font-family: 'Marck Script', cursive;
 .navbar-inverse .navbar-brand {
 	color: black;
 }
+
+.button-group .button {
+	display: inline-block;
+	padding: 10px;
+	margin: 30px 5px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+  }
+  .button-group .button:hover {
+	background-color: rgba(255, 255, 255, 0.32);
+  }
+  .button-group .button.active {
+	background-color: rgba(255, 255, 255, 0.52);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.6) inset;
+  }
+  
+  * { box-sizing: border-box; }
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.element-item {
+width: 33.333%;
+  float: left;
+}
+
+.element-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.grid:hover img {
+	opacity: 0.28;
+}
+  
+.grid .element-item:hover img {
+	opacity: 1;
+	transform: scale(1.04);
+}
+  
+@media (max-width: 860px) {
+	.grid .element-item {
+	  width: 50%;
+	  min-height: 150px;
+	}
+}
+@media (max-width: 667px) {
+	.grid .element-item {
+	  width: 100%;
+	  min-height: 220px;
+	}
+} 
