@@ -1,5 +1,5 @@
 // init Isotope
-var $grid = $('.grid').isotope({
+var $grid = $('.grid').fadeIn(1000).isotope({
   itemSelector: '.element-item',
   percentPosition: true,
   masonry: {

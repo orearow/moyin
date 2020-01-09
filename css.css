@@ -9,6 +9,10 @@ body{
 	font-family: 'Marck Script', cursive;
 }
 
+.jumbotron h2 {
+	color: white;
+}
+
 .grid-banner {
 	color: hotpink;
 	font-family: 'Marck Script', cursive;
@@ -29,8 +33,16 @@ body{
 .navbar-inverse .navbar-brand {
 	color: black;
 }
-.services{
+.services {
 	color: hotpink;
+}
+
+.vertical-center{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .button-group .button {
@@ -49,18 +61,14 @@ body{
 	background-color: rgba(255, 255, 255, 0.52);
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.6) inset;
 }
-  
-  * { box-sizing: border-box; }
 
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
+#service-info { 
+	margin-top: 40px; 
 }
 
-/* ---- .grid-item ---- */
+* { box-sizing: border-box; }
 
+/* ---- .grid-item ---- */
 .element-item {
 width: 33.333%;
   float: left;
@@ -69,7 +77,6 @@ width: 33.333%;
   display: block;
   max-width: 100%;
 }
-
 .grid:hover img {
 	opacity: 0.28;
 }
@@ -77,6 +84,7 @@ width: 33.333%;
 	opacity: 1;
 	transform: scale(1.04);
 }
+
 @media (max-width: 860px) {
 	.grid .element-item {
 	  width: 50%;
